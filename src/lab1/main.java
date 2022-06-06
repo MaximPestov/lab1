@@ -11,13 +11,7 @@ public class main {
 			Scanner s = new Scanner(System.in);
 				Graph GR = new Graph();
 				int ch1, isWeight = 0;
-				boolean openWindow = false;
-				boolean openGragh = false;
-				int add2.1 = 2;
-			    int add2.2 = 10000;
-				float add2.1.1 = 21.1;
-				boolean ok = false;
-				int add2.2 = 22;
+				int a = 10;
 				do {
 					System.out.println("1 - Entering a graph.");
 					System.out.println("2 - Find out the weight of the vertex.");
