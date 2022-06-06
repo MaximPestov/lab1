@@ -10,24 +10,25 @@ public class main {
 		app.setVisible(true);
 			Scanner s = new Scanner(System.in);
 				Graph GR = new Graph();
-				//GR.SetTablesWeight();
-				int ch1, isWeight = 0; 
+				int ch1, isWeight = 0;
+				boolean openWindow = false;
+				boolean openGragh = false;
 				boolean ok = false;
 				do {
 					System.out.println("1 - Entering a graph.");
 					System.out.println("2 - Find out the weight of the vertex.");
 					System.out.println("3 - Find out adjacent vertices.");
-					System.out.println("4 - Сhange the graph structure.");
+					System.out.println("4 - пїЅhange the graph structure.");
 					System.out.println("0 - Exit.");
 					do {
 					ch1 = InputInt();
-					if (ch1 <0 | ch1>4) 
+					if (ch1 <0 | ch1>4)
 					System.out.println("Input mean in range {0..4}");
 					}
 					while (ch1 <0 | ch1>4);
 					switch(ch1) {
-					case 1:  //ввод графа
-						//очистить
+					case 1:  //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+						//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						System.out.println("1 - Entering a unweighted graph.");
 						System.out.println("2 - Entering a weighted graph.");
 						int ch2;
@@ -40,8 +41,8 @@ public class main {
 					//	if (ch2 == 1) { GR.SetTableNonWeight(); isWeight = 0; ok = true; }
 						//if (ch2 == 2) { GR.SetTablesWeight(); isWeight = 1; ok = true; }
 						break; 
-					case 2:    //узнать вес вершины
-						//очистить
+					case 2:    //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+						//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if (ok){
 						if (isWeight == 1) {
 							System.out.println("Enter a vertex: ");
@@ -53,7 +54,7 @@ public class main {
 						} else {System.out.println("The graph isn`t entered!");}
 						break;
 						
-					case 3:   //узнать смежные вершины
+					case 3:   //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if(ok) {
 							int vertex;
 							System.out.println("Enter a vertex: ");
@@ -93,7 +94,7 @@ public class main {
 				
 				while(ch1 != 0);
 				
-			
+
 			
 		}
 		

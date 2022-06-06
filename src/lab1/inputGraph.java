@@ -42,11 +42,12 @@ public class inputGraph extends JFrame{
 		for (i = 0; i < numTops*numTops; i++) {
 			matrix[i] = new JTextField("",5);	
 		}
+		int nVar = 5;
 		gbc.gridy = 0;
 		gbc.gridwidth = 2;
 		add(label1, gbc);
 		gbc.gridwidth = 1;
-		//номерки
+		//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		String st ="";
 		int help = 0;
 		JLabel  labelNum[] = new JLabel[numTops*3+1];
@@ -65,13 +66,13 @@ public class inputGraph extends JFrame{
 		}
 		gbc.gridx = 1;
 		gbc.gridy = 1;
-		for (i = 1; i < numTops+1; i++) {//горизонтальные циферки
+		for (i = 1; i < numTops+1; i++) {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			add(labelNum[i], gbc);
 			gbc.gridx = 1+i;
 		}
 		gbc.gridy = 2;
 		gbc.gridx = 0;
-		for (i = 1; i < numTops+1; i++) {//вертикальные циферки
+		for (i = 1; i < numTops+1; i++) {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			add(labelNum[i+numTops], gbc);
 			gbc.gridy = 2+i;
 		}
@@ -88,22 +89,22 @@ public class inputGraph extends JFrame{
 			}
 			}
 		}
-		//тут начал
+		//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		
-		if (!isStruck) {   //иземенение структуры
-		if (check == false) {  //проверка взвешенного графа
+		if (!isStruck) {   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		if (check == false) {  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		gbc.gridy = numTops+2;
 		gbc.gridx = 0;
 		gbc.gridwidth = 1;
-		add(label2, gbc); //кнопка 2
+		add(label2, gbc); //пїЅпїЅпїЅпїЅпїЅпїЅ 2
 		
-		for (i = 1; i <= numTops; i++) {  //цифры над весом
+		for (i = 1; i <= numTops; i++) {  //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			gbc.gridx = i;
 			add(labelNum[numTops*2+i], gbc);
 		}
 		
 		
-		gbc.gridwidth = 1;  //ввод весов
+		gbc.gridwidth = 1;  //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		 JTextField  weightVertex[] = new JTextField[numTops];
 		 for (i = 0; i < numTops; i++) {
 			 weightVertex[i] = new JTextField("",5);	
@@ -115,13 +116,13 @@ public class inputGraph extends JFrame{
 				gbc.gridx = i+1;
 				add(weightVertex[i], gbc);
 				}
-		 //кнопка
+		 //пїЅпїЅпїЅпїЅпїЅпїЅ
 		 weightVertexA = weightVertex;
 		} else {gbc.gridy = numTops+2;
 			gbc.gridx = 0;
 			gbc.gridwidth = 1;
 			add(lNon, gbc); }
-		} else {   //тут надо заполнить элементы матрицы
+		} else {   //пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			int tableSmej[][] = gr.getTable_Smej();
 			for (i = 0; i < numTops; i++ ) {
 				for (j = 0; j < numTops; j++ ) {
@@ -151,7 +152,7 @@ public class inputGraph extends JFrame{
 			/**
 			 * @param e
 			 */
-			public void actionPerformed(ActionEvent e) {  //какое то событие оно сюда передается в качестве параметра
+			public void actionPerformed(ActionEvent e) {  //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			    
 				int graphSmej[][] = new int[numTopsA][numTopsA];  
 				int numTops = 0;
@@ -192,7 +193,7 @@ public class inputGraph extends JFrame{
 					}
 				  }	
 				}
-				//проверка есть ли весы
+				//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
 				int weight[] = new int[numTopsA];
 				boolean flCorrW = false;
 				
@@ -222,7 +223,7 @@ public class inputGraph extends JFrame{
 				}	
 					
 				}
-				//если оба true, тогда надо заполнить граф и потом закрыть
+				//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ true, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				if (ch == false) {
 					Graph grHelp = new Graph();
 					gr = grHelp;
