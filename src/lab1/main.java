@@ -13,6 +13,8 @@ public class main {
 				int ch1, isWeight = 0;
 				boolean openWindow = false;
 				boolean openGragh = false;
+				int add2.1 = 2;
+				float add2.1.1 = 21.1;
 				boolean ok = false;
 				int add2.2 = 22;
 				do {
