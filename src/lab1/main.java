@@ -13,6 +13,7 @@ public class main {
 				int ch1, isWeight = 0;
 				boolean openWindow = false;
 				boolean openGragh = false;
+				int add2.1 = 2;
 				boolean ok = false;
 				do {
 					System.out.println("1 - Entering a graph.");
