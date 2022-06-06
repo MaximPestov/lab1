@@ -14,6 +14,7 @@ public class main {
 				boolean openWindow = false;
 				boolean openGragh = false;
 				int add2.1 = 2;
+				float add2.1.1 = 21.1;
 				boolean ok = false;
 				do {
 					System.out.println("1 - Entering a graph.");
