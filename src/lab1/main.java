@@ -14,6 +14,7 @@ public class main {
 				boolean openWindow = false;
 				boolean openGragh = false;
 				boolean ok = false;
+				int add2.2 = 22;
 				do {
 					System.out.println("1 - Entering a graph.");
 					System.out.println("2 - Find out the weight of the vertex.");
